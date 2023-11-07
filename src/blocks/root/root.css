@@ -1,0 +1,13 @@
+.root
+ {
+  font-family: "Inter", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: #000000;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
