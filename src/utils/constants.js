@@ -1,5 +1,5 @@
 export const cardsContainer = '.grid-elements__list';
-export const ImagePopup = '.popup_zoom';
+export const ImagePopup = '.popup-zoom';
 export const popupAdd = '.popup_add';
 export const popupConfirm = '.popup_confirm';
 export const popupProfile = '.popup_profile';

@@ -45,7 +45,7 @@ function App() {
     }
   }, [loggedIn]);
 
-  const handleTokenCheck = React.useCallback(() => {
+  const handleTokenCheck = () => {
     const jwt = localStorage.getItem('jwt');
     if (jwt) {
       auth.getData(jwt)
@@ -58,11 +58,11 @@ function App() {
           console.log(`Ошибка получения токена: ${err}`);
         })
     }
-  }, [navigate]);
+  };
 
   React.useEffect(() => {
     handleTokenCheck()
-  }, [handleTokenCheck]);
+  }, []);
 
   const signOut = () => {
     localStorage.removeItem('jwt');
@@ -185,7 +185,7 @@ function App() {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <div className='root'>
+      <div>
         <Routes>
           <Route path="sign-up" element={
             <>

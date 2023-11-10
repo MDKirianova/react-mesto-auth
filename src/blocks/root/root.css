@@ -6,15 +6,12 @@
   text-rendering: optimizeLegibility;
   background-color: #000000;
   color: #fff;
-  padding: 0 30px;
+  padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
+  height: 100%;
+  max-width: 880px;
 }
 
-@media screen and (min-width: 769px) {
-  .root{
-    padding: 0 80px;
-  }
-}
 
 
